@@ -2,6 +2,7 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
+  testDir: './Connester',   // 👈 look inside Connester folder
   use: {
     browserName: 'chromium',
     headless: false, // set true if you don't want browser UI
@@ -9,5 +10,4 @@ export default defineConfig({
     screenshot: 'on',
     video: 'retain-on-failure'
   },
-  testDir: './tests',
 });
