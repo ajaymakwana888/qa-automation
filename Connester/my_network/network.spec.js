@@ -37,8 +37,8 @@ test('Click My Network tabs and hold for 5 seconds', async ({ page }) => {
     await tab.waitFor({ state: 'visible', timeout: 10000 });
     await tab.click();
 
-    // Hold for 5 seconds
-    await page.waitForTimeout(5000);
+    // Hold for 3 seconds
+    await page.waitForTimeout(3000);
   }
 
   console.log("✅ Finished clicking all My Network tabs.");
