@@ -7,7 +7,7 @@ test('Navigate to Community and start Create New Community flow', async ({ page 
     test.setTimeout(60000);
 
     // Go to login page
-    await page.goto('https://connester.octalinfotech.com/login');
+    await page.goto('https://connester.com/login');
 
     // Login
     await page.fill('input[type="email"]', 'niravv.octal8@gmail.com');

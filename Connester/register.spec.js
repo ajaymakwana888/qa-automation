@@ -5,7 +5,7 @@ test.describe('Connester Register Page', () => {
 
   test('should register a new user successfully', async ({ page }) => {
     // Navigate to signup page
-    await page.goto('https://connester.octalinfotech.com/sign-up');
+    await page.goto('https://connester.com/sign-up');
 
     // Fill out the registration form
     await page.fill('input[placeholder="Enter your name"]', 'Test User');
@@ -19,7 +19,7 @@ test.describe('Connester Register Page', () => {
     await page.click('button:has-text("Sign Up")');
 
     // ✅ Expect redirect to home page
-    await expect(page).toHaveURL('https://connester.octalinfotech.com/home');
+    await expect(page).toHaveURL('https://connester.com/home');
 
     // ⏸ Pause execution here (you can inspect DOM, cookies, etc.)
     await page.pause();

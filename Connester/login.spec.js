@@ -6,14 +6,14 @@ test('Create Media Post with caption + 2 random images', async ({ page }) => {
   // Increase test timeout to handle all posts
   test.setTimeout(120000);
 
-  await page.goto('https://connester.octalinfotech.com/login');
+  await page.goto('https://connester.com/login');
 
   // Login
   await page.fill('input[type="email"]', 'niravv.octal8@gmail.com');
   await page.fill('input[type="password"]', 'Nirav@#$123');
   await page.check('input[type="checkbox"]');
   await page.click('button:has-text("Sign In")');
-  await expect(page).toHaveURL(/https:\/\/connester\.octalinfotech\.com(\/home)?/);
+  await expect(page).toHaveURL(/https:\/\/connester\.com(\/home)?/);
 
   // Step 1: Create a Content Post
   function getRandomText() {

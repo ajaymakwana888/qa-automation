@@ -5,7 +5,7 @@ test('Open Find Jobs from sidebar and apply filters', async ({ page }) => {
   test.setTimeout(90000);
 
   // Go to login page
-  await page.goto('https://connester.octalinfotech.com/login');
+  await page.goto('https://connester.com/login');
 
   // Login
   await page.fill('input[type="email"]', 'niravv.octal8@gmail.com');

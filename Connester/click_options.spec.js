@@ -5,7 +5,7 @@ test('Click all post options and hold for 7 seconds', async ({ page }) => {
   test.setTimeout(60000); // 1 minute max
 
   // Go to login page
-  await page.goto('https://connester.octalinfotech.com/login');
+  await page.goto('https://connester.com/login');
 
   // Login
   await page.fill('input[type="email"]', 'niravv.octal8@gmail.com');
